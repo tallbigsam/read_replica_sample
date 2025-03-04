@@ -10,7 +10,8 @@ load_dotenv()
 # MongoDB connection URI
 username = os.getenv("username")
 password = os.getenv("password")
-uri = f"mongodb+srv://{username}:{password}@cluster0.j5mfx.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+cluster_fqdn = os.getenv("cluster_fqdn")
+uri = f"mongodb+srv://{username}:{password}@{cluster_fqdn}/?retryWrites=true&w=majority"
 
 # Sample restaurant data
 sample_data = [
