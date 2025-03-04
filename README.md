@@ -1,8 +1,8 @@
 this needs a .env with three values:
 
-username=username\n
-password=password\n
-cluster_fqdn=samplecluster.aownd.mongodb.net\n
+username=username   
+password=password  
+cluster_fqdn=samplecluster.aownd.mongodb.net  
 
 the best way to run this test is to set up an Atlas cluster with the following config:
 
